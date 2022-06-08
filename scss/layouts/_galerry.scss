@@ -1,0 +1,44 @@
+/* Примеры работ galerry-cection */
+
+.galerry {
+    background-color: var(--main-bacground-color);
+    padding-bottom: 94px;
+}
+
+.galerry__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.71;
+    color: var(--title-text-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.galerry__img {
+    display: flex;
+}
+
+.galerry__item:not(:last-child) {
+    margin-right: 30px;
+    width: 370px;
+}
+
+/* Псевдо-элемент для Примеры работ */
+.galrrry__text {
+    position: relative;
+}
+
+.galrrry__applications {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    line-height: 1.14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

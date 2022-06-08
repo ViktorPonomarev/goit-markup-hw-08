@@ -1,0 +1,43 @@
+/* Шапка , header-container*/
+.header-section {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+
+}
+
+.navigation-item {
+    display: block;
+    margin-right: 50px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.navigation-item:last-child {
+    margin-right: 0;
+}
+
+.item-desktop {
+    margin-right: 50px;
+
+}
+
+.auth-nav {
+    display: block;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}

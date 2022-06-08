@@ -1,0 +1,59 @@
+/* Иконки футер */
+.footer-social {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-aside {
+    margin-right: 70px;
+}
+
+.social-join {
+    box-sizing: border-box;
+}
+
+.caption {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+
+.social {
+    display: flex;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        fill: var(--main-bacground-color);
+    }
+
+    &:hover .social-icon,
+    &:focus .social-icon {
+        fill: var(--main-bacground-color);
+    }
+}
+
+.social-icon {
+    fill: var(--main-bacground-color)
+}

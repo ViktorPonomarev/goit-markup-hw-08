@@ -1,0 +1,63 @@
+/* < !-- Преимущества benefits-section --> */
+.benefits {
+    display: flex;
+    margin-right: -30px;
+}
+
+.benefits__item {
+    margin-right: 30px;
+    width: 270px;
+}
+
+.benefits__item:last-child {
+    margin-right: 0;
+}
+
+.benefits__text {
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: var(--main-text-color);
+}
+
+.benefits__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+/* Иконки Преймущества */
+.benefits {
+    display: flex;
+}
+
+.benefits__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.benefits__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    border: 1px solid var(--team-bacgrount-color);
+    border-radius: 4px;
+    background-color: var(--team-bacgrount-color);
+    margin-bottom: 30px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        border-color: var(--accent-color);
+    }
+
+    &:hover .benefits__icon,
+    &:focus .benefits__icon {
+        fill: var(--accent-color);
+    }
+}

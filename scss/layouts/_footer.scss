@@ -1,0 +1,51 @@
+.address {
+    font-style: normal;
+
+}
+
+
+.footer-section {
+    background-color: var(--secondary-bacground-color);
+    color: var(--secondary-text-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.footer-item {
+    margin-top: 9px;
+}
+
+.footer-item:not(:last-child) {
+    margin-top: 9px;
+}
+
+.footer-text {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+
+
+.footer-link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
