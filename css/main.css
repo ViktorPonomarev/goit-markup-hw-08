@@ -36,7 +36,7 @@
   margin: 0;
 }
 
-.benefits__title {
+.benefits__title, .benefits__text {
   margin: 0;
 }
 
@@ -1009,7 +1009,6 @@ img {
   color: var(--main-text-color);
 }
 
-/* Иконки Преймущества */
 /* Примеры работ galerry-cection */
 .galerry {
   background-color: var(--main-bacground-color);
