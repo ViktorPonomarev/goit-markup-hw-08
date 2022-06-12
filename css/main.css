@@ -30,7 +30,7 @@
   overflow: hidden;
 }
 
-.benefits {
+.benefits, .galerry__img {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -49,13 +49,13 @@ body {
 }
 
 /* Падинги для секций */
-.section {
+.section, .galerry {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
-  .section {
+  .section, .galerry {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -1011,8 +1011,15 @@ img {
 
 /* Примеры работ galerry-cection */
 .galerry {
+  display: none;
   background-color: var(--main-bacground-color);
-  padding-bottom: 94px;
+}
+
+@media screen and (min-width: 1200px) {
+  .galerry {
+    display: block;
+    padding-top: 0;
+  }
 }
 
 .galerry__title {
@@ -1024,15 +1031,25 @@ img {
   margin-bottom: 50px;
 }
 
-.galerry__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .galerry__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
-.galerry__item:not(:last-child) {
-  margin-right: 30px;
+.galerry__item {
+  position: relative;
   width: 370px;
+}
+
+@media screen and (min-width: 768px) {
+  .galerry__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 /* Псевдо-элемент для Примеры работ */

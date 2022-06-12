@@ -1,9 +1,19 @@
 /* Примеры работ galerry-cection */
 
 .galerry {
+    @extend .section;
+
+    display: none;
+
+    @include mq(desktop) {
+        display: block;
+
+        padding-top: 0;
+    }
+
     background-color: var(--main-bacground-color);
-    padding-bottom: 94px;
 }
+
 
 .galerry__title {
     font-weight: 700;
@@ -15,12 +25,23 @@
 }
 
 .galerry__img {
-    display: flex;
+    @extend %list;
+
+    @include mq(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
-.galerry__item:not(:last-child) {
-    margin-right: 30px;
+.galerry__item {
+    position: relative;
     width: 370px;
+
+    @include mq(tablet) {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
 }
 
 /* Псевдо-элемент для Примеры работ */
