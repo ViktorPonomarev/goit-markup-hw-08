@@ -19,7 +19,7 @@
     }
 
     @include mq(tablet) {
-        width: 354px;
+        flex-basis: calc((100% - 30px) / 2);
 
         &:nth-child(odd) {
             margin-right: 30px;
