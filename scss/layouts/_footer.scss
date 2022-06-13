@@ -22,14 +22,35 @@
     }
 }
 
+// footer addres
+.footer-aside {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
 
-.address {
-    font-style: normal;
+    @include mq(tablet) {
+        width: 231px;
+        margin-right: 165px;
+    }
 
+    @include mq(desktop) {
+        text-align: left;
+        margin-right: 70px;
+        margin-bottom: 0;
+    }
 }
 
+.footer-address {
+    font-style: inherit;
+}
 
+// .address {
+//     font-style: normal;
 
+// }
+.team-footer {
+    @extend %list;
+}
 
 .footer-item {
     margin-top: 9px;
@@ -40,6 +61,7 @@
 }
 
 .footer-text {
+    @extend %link-decor;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -56,6 +78,7 @@
 
 
 .footer-link {
+    @extend %link-decor;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;

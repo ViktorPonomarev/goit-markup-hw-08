@@ -30,10 +30,14 @@
   overflow: hidden;
 }
 
-.benefits, .galerry__img, .clients {
+.social, .benefits, .galerry__img, .clients, .team-footer {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.footer-text, .footer-link {
+  text-decoration: none;
 }
 
 .benefits__title, .benefits__text {
@@ -409,6 +413,25 @@ img {
 }
 
 /* Иконки футер */
+.social-join {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .social-join {
+    width: 206px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-join {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
 .footer-social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -422,12 +445,8 @@ img {
   margin-right: 70px;
 }
 
-.social-join {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .caption {
+  display: inline-block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1270,8 +1289,29 @@ img {
   }
 }
 
-.address {
-  font-style: normal;
+.footer-aside {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-aside {
+    width: 231px;
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-aside {
+    text-align: left;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+}
+
+.footer-address {
+  font-style: inherit;
 }
 
 .footer-item {
