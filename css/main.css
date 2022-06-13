@@ -36,7 +36,7 @@
   margin: 0;
 }
 
-.social-link, .logo-footer, .footer-text, .footer-link {
+.social-link, .logo-header, .logo-footer, .footer-text, .footer-link {
   text-decoration: none;
 }
 
@@ -596,13 +596,27 @@ img {
 
 /* Логотип */
 .logo-header {
-  display: block;
-  margin-right: 93px;
   color: var(--accent-color);
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-header {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-header {
+    margin-right: 93px;
+    padding-top: 25px;
+    padding-bottom: 24px;
+  }
 }
 
 .logo-title {

@@ -1,14 +1,27 @@
 /* Логотип */
 .logo-header {
-    display: block;
-    margin-right: 93px;
+    @extend %link-decor;
+
+
     color: var(--accent-color);
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
 
+    @include mq(tablet) {
+        margin-right: 88px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    @include mq(desktop) {
+        margin-right: 93px;
+        padding-top: 25px;
+        padding-bottom: 24px;
+    }
 }
+
 
 .logo-title {
     color: var(--logo-text-color);
