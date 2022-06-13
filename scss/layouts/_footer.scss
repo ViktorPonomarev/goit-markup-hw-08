@@ -50,6 +50,9 @@
 // }
 .team-footer {
     @extend %list;
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-item {
