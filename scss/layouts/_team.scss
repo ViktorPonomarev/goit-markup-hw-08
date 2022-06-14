@@ -1,4 +1,29 @@
 /* Наша команда */
+.team-section {
+    @extend .section;
+    background-color: var(--team-bacgrount-color);
+
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--title-text-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team {
+    @extend %list;
+
+    @include mq(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
 .img-item {
     width: 100%;
 
@@ -37,39 +62,21 @@
     }
 }
 
-.team-section {
-    @extend .section;
-    background-color: var(--team-bacgrount-color);
 
-}
 
-.team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    color: var(--title-text-color);
-    text-align: center;
-    margin-bottom: 50px;
-}
 
-.team.list {
-    @extend %list;
 
-    @include mq(tablet) {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
 
 .items-team {
-    padding: 30px 32px;
+    // padding: 30px 32px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     @include mq(not-desktop) {
         padding-bottom: 24px;
     }
 
-    // padding-top: 30px;
-    // padding-bottom: 30px;
+
 }
 
 .team-item {
@@ -101,7 +108,9 @@
 }
 
 
+
 .team-text {
+    @extend %no-margin;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
