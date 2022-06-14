@@ -13,10 +13,38 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.auth-icon {
+.auth-icon__icon-envelope {
     fill: currentColor;
     margin-right: 10px;
+
+    @media screen and (min-width: 768px) {
+        width: 14px;
+        height: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+
+
+    }
 }
+
+.auth-icon__icon-phone {
+    fill: currentColor;
+    margin-right: 10px;
+
+    @media screen and (min-width: 768px) {
+        width: 10px;
+        height: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+    }
+}
+
 
 .link.current {
     color: var(--accent-color);
@@ -27,6 +55,28 @@
 .nav:focus {
     color: var(--accent-color);
 
+}
+
+.auth-nav {
+    @extend %list;
+
+    display: none;
+
+    margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header-contacts__item:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 /* Студия псевдо-элемент */
@@ -57,8 +107,6 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -66,5 +114,26 @@
     &:hover,
     &:focus {
         color: var(--accent-color);
+    }
+
+    @include mq(tablet-only) {
+        font-size: 12px;
+        line-height: 1.17;
+
+    }
+
+    @include mq(desktop) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+}
+
+.item-desktop {
+    @include mq(tablet-only) {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+            margin-right: auto;
+        }
     }
 }

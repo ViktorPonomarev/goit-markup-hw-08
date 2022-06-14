@@ -7,7 +7,7 @@
 }
 
 .footer-social {
-    // @extend .container;
+    @extend .container;
 
     @include mq(tablet) {
         display: flex;
@@ -44,24 +44,18 @@
     font-style: inherit;
 }
 
-// .address {
-//     font-style: normal;
 
-// }
 .team-footer {
     @extend %list;
-    justify-content: flex-start;
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.footer-item {
-    margin-top: 9px;
 }
 
 .footer-item:not(:last-child) {
-    margin-top: 9px;
+    margin-bottom: 9px;
+
 }
+
+
 
 .footer-text {
     @extend %link-decor;
