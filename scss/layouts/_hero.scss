@@ -2,7 +2,7 @@
 .hero-section {
     max-width: 1600px;
 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-8.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     background-color: var(--secondary-bacground-color);
     background-size: cover;
     background-position: center;
@@ -21,18 +21,14 @@
 
 .hero-title {
     @extend %no-margin;
-
+    margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    width: 696px;
-    height: 120px;
-    text-transform: uppercase;
-    color: var(--secondary-text-color);
-    margin: auto;
-    align-items: center;
-    text-align: center;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--secondary-text-color);
 
     @include mq(desktop) {
         font-size: 40px;

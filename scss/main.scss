@@ -20,7 +20,7 @@
 @import './components/btn/hero-btn';
 @import './components/btn/modal-btn';
 @import './components/btn/btn-comment';
-@import './components/btn/mobile-button__container';
+@import './components/btn/header-mobile-button';
 
 
 // social
@@ -33,13 +33,14 @@
 @import './components/modal/form';
 @import './components/modal/comment';
 @import './components/modal/check';
-@import './components/mobile-menu';
+
 
 
 
 // layuots
 @import './layouts/header';
 @import './layouts/hero';
+@import './layouts/header-mob-menu';
 @import './layouts/benefits';
 @import './layouts/galerry';
 @import './layouts/team';
