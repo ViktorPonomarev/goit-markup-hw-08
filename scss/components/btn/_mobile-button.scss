@@ -16,3 +16,11 @@
 .mobile-button .icon-cross {
     display: none;
 }
+
+.menu-button .is-open .icon-cross {
+    display: block;
+}
+
+.menu-button .is-open .icon-menu {
+    display: none;
+}
