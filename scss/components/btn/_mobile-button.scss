@@ -1,0 +1,18 @@
+.page-header .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+
+}
+
+.mobile-button {
+    @extend %list;
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
+}
+
+.mobile-button .icon-cross {
+    display: none;
+}
