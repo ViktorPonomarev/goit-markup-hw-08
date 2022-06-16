@@ -73,32 +73,26 @@
       <!-- Мобильная кнопка и лого -->
       <div class="page-header">
         <div class="container">
-          <nav class="header-nav">
+          <nav class="header-navigation">
              <a lang="en" href="./index.html" class="logo-header link"
               >Web<span class="logo-title">Studio</span></a>
 
-              <button class="nav__btn " type="button" 
-          aria-expanded="false"
-          aria-controls="nav-menu"
-          data-menu-button>
-          <svg class="nav-btn__svg" 
+              <button class="menu-btn is-open" 
+              type="button" 
+              data-menu-button
+              aria-expanded="false"
+              aria-controls="mobile-menu">
+          <svg class="" 
             width="40" 
             height="40"
             aria-label="переключтаель мобильного">
-              <use class="nav-btn__close"  href="./images/sprite.svg#icon-close_mob-menu"></use>
-              <use class="nav-btn__menu" href="./images/sprite.svg#icon-mob-menu"></use>
-
-            </svg>
+              <use class="icon-cross"  href="./images/sprite.svg#icon-close_mob-menu"></use>
+              <use class="icon-menu" href="./images/sprite.svg#icon-mob-menu"></use>
+              </svg>
           </button>
+            <!-- Мобильное меню -->
 
-          </nav>
-        </div>
-      </div>
-
-
-      <!-- Мобильное меню -->
-
-      <div class="mobile-menu">
+      <div class="mobile-menu" id="mobile-menu" data-menu>
       <ul class="mobile-menu__nav">
        <li class="navigation-item">
                 <a href="./index.html" class="nav link current">Студия</a>
@@ -132,10 +126,11 @@
         </li>
       </ul>
     </div>
+            </nav>
+        </div>
+      </div>
 
-  
-      
-    </header>
+</header>
    
    
     <main>
@@ -721,7 +716,7 @@
 <!-- Mobile menu -->
    
 
-<div class="mobile-menu">
+<!-- <div class="mobile-menu">
       <ul class="mobile-menu__nav">
         <li class="mobile-menu__item">
           <a href="" class="mobile-menu__link">Студия </a>
@@ -755,4 +750,4 @@
           <a href="" class="mobile-menu__link">LinkedIn</a>
         </li>
       </ul>
-    </div>
+    </div> -->

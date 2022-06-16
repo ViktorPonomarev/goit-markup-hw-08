@@ -1,0 +1,53 @@
+.page-header {
+    border-bottom: 1px solid #ececec;
+    position: relative;
+}
+
+.page-header .header-navigation {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+
+}
+
+
+
+.menu-btn {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+
+}
+
+.menu-btn .icon-cross {
+    display: none;
+}
+
+.menu-btn .is-open .icon-cross {
+    display: block;
+}
+
+.menu-btn .is-open .icon-menu {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+
+    &is-open {
+        display: block;
+    }
+
+}

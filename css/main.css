@@ -337,6 +337,61 @@ img {
   background-color: #2187F7;
 }
 
+.page-header {
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
+
+.page-header .header-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 80px;
+}
+
+.menu-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-btn .icon-cross {
+  display: none;
+}
+
+.menu-btn .is-open .icon-cross {
+  display: block;
+}
+
+.menu-btn .is-open .icon-menu {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.mobile-menuis-open {
+  display: block;
+}
+
 .modal-btn {
   position: absolute;
   top: 8px;
@@ -1035,8 +1090,8 @@ img {
 /*Герой */
 .hero-section {
   max-width: 1600px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))) url(../images/Img-8.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) url(../images/Img-8.jpg);
   background-color: var(--secondary-bacground-color);
   background-size: cover;
   background-position: center;
@@ -1563,6 +1618,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
