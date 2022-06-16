@@ -28,7 +28,7 @@
   <body class="body">
     <!-- Шапка,логотип -->
     <header class="header-section">
-      <div class="container">
+      <div class="container header-container">
         <div class="header-nav">
           <nav class="navigation">
             <a lang="en" href="./index.html" class="logo-header link"
@@ -70,29 +70,52 @@
           </ul>
         </div>
       </div>
+      <!-- Мобильная кнопка и лого -->
+      <div class="page-header">
+        <div class="container">
+          <nav class="header-nav">
+             <a lang="en" href="./index.html" class="logo-header link"
+              >Web<span class="logo-title">Studio</span></a>
+
+              <button class="nav__btn " type="button" 
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          data-menu-button>
+          <svg class="nav-btn__svg" 
+            width="40" 
+            height="40"
+            aria-label="переключтаель мобильного">
+              <use class="nav-btn__close"  href="./images/sprite.svg#icon-close_mob-menu"></use>
+              <use class="nav-btn__menu" href="./images/sprite.svg#icon-mob-menu"></use>
+
+            </svg>
+          </button>
+
+          </nav>
+        </div>
+      </div>
 
 
       <!-- Мобильное меню -->
 
-      <!-- <div class="mobile-menu">
+      <div class="mobile-menu">
       <ul class="mobile-menu__nav">
-        <li class="mobile-menu__item">
-          <a href="" class="mobile-menu__link">Студия </a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="" class="mobile-menu__link">Портфолио</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="" class="mobile-menu__link">Контакты</a>
-        </li>
+       <li class="navigation-item">
+                <a href="./index.html" class="nav link current">Студия</a>
+              </li>
+              <li class="navigation-item">
+                <a href="./portfolio.html" class="nav link">Портфолио</a>
+              </li>
+              <li class="navigation-item"><a href="./index.html" class="nav link">Контакты</a>
+              </li>
       </ul>
       <ul class="mobile-menu__contatcts">
-        <li class="mobile-menu__item">
-          <a href="tel:+380961111111" class="mobile-menu__link">+38 096 111 11 11</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="mailto:info@devstudio.com" class="mobile-menu__link">info@devstudio.com</a>
-        </li>
+      <li class="item-desktop">
+              <a href="mailto:info@devstudio.com" class="header-link link">info@devstudio.com</a>
+            </li>
+            <li class="item-tel">
+              <a href="tel:+380961111111" class="header-link link">+38 096 111 11 11</a>
+            </li>
       </ul>
       <ul class="mobile-menu__socials">
         <li class="mobile-menu__item">
@@ -108,143 +131,16 @@
           <a href="" class="mobile-menu__link">LinkedIn</a>
         </li>
       </ul>
-      
-    </div> -->
-     <div class="container mobile-wrapper">
-         <a lang="en" href="./index.html" class="logo-header link"
-              >Web<span class="logo-title">Studio</span></a>
-        <button
-          type="button"
-          class="mob-menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="mob-menu__open-icon" href="../images/sprite.svg#icon-mob-menu"></use>
-          </svg>
-        </button>
+    </div>
 
-        <div class="mob-menu-container js-menu-container" id="mobile-menu">
-          <ul class="header-mob-menu list">
-            <li class="header-mob-menu__item">
-              <a
-                class="header-mob-menu__link link header-mob-menu__link--current"
-                href="./index.html"
-              >
-                Студия
-              </a>
-            </li>
-            <li class="header-mob-menu__item">
-              <a class="header-mob-menu__link link" href="./porfolio.html">Портфолио</a>
-            </li>
-            <li class="header-mob-menu__item">
-              <a class="header-mob-menu__link link" href="">Контакты</a>
-            </li>
-          </ul>
-
-          <!--mob contacts  -->
-          <ul class="header-mob-contacts list">
-            <li class="header-mob-contacts__item">
-              <a
-                class="header-mob-contacts__link link accent"
-                href="tel:+380961111111"
-                title="Набрать номер"
-              >
-                +38 096 111 11 11</a
-              >
-            </li>
-            <li class="header-mob-contacts__item">
-              <a
-                class="header-mob-contacts__link link"
-                href="mailto:info@devstudio.com"
-                title="Отправить письмо"
-              >
-                info@devstudio.com</a
-              >
-            </li>
-          </ul>
-
-          <!-- mob socials -->
-          <ul class="header-mob-socials list">
-            <li class="header-mob-socials__item">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Перейти на страничку Instagram"
-                class="header-mob-socials__link link"
-                >Instagram</a
-              >
-            </li>
-            <li class="header-mob-socials__item">
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Перейти на страничку Twitter"
-                class="header-mob-socials__link link"
-                >Twitter</a
-              >
-            </li>
-            <li class="header-mob-socials__item">
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Перейти на страничку Facebook"
-                class="header-mob-socials__link link"
-                >Facebook</a
-              >
-            </li>
-            <li class="header-mob-socials__item">
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Перейти на страничку Linkedin"
-                class="header-mob-socials__link link"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
-          <button
-            type="button"
-            class="mob-menu-close js-close-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="mob-menu__close-icon" href="../images/sprite.svg#icon-close_mob-menu"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    
- <!-- <div class="page-header">
- <div class="container">
-  <nav class="navigation">
-    <a lang="en" href="./index.html" class="logo-header link"
-              >Web<span class="logo-title">Studio</span></a>
-    <button
-            type="button"
-            class="mobile-button"
-            aria-expanded="false"
-            aria-controls="mobile-menu is-open">
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="icon-cross" href="../images/sprite.svg#icon-mob-menu"></use>
-              <use class="icon-menu" href="../images/sprite.svg#icon-close_mob-menu"></use>
-            </svg>
-          </button>
-          </nav>
-          </div>
-          </div> -->
+  
       
     </header>
    
    
     <main>
       <!-- Герой -->
-      <!-- <section class="hero-section">
+      <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           
@@ -311,7 +207,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       
       <!-- Преимущества benefits-section-->
       <section class="section">
@@ -825,7 +721,7 @@
 <!-- Mobile menu -->
    
 
-<!-- <div class="mobile-menu">
+<div class="mobile-menu">
       <ul class="mobile-menu__nav">
         <li class="mobile-menu__item">
           <a href="" class="mobile-menu__link">Студия </a>
@@ -859,4 +755,4 @@
           <a href="" class="mobile-menu__link">LinkedIn</a>
         </li>
       </ul>
-    </div> -->
+    </div>

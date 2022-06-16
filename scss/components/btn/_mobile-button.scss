@@ -1,26 +1,45 @@
-.page-header .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 80px;
-
-}
-
-.mobile-button {
-    @extend %list;
+.nav__btn {
     display: inline-flex;
+    justify-content: center;
+    align-content: center;
+
+    padding: 0%;
+    margin: 0;
     border: none;
     background-color: transparent;
+
+    color: var(--main-text-color);
+    fill: currentColor;
+
+    z-index: 10;
+
+
+    transition-property: color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $timing-bezier;
+
+
+    &:hover {
+        color: $accent-color;
+    }
+
+    @media screen and (max-width: 767.9px) {
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 767.9px) {
+        display: none;
+    }
 }
 
-.mobile-button .icon-cross {
+.nav__btn .nav-btn__close {
     display: none;
 }
 
-.menu-button .is-open .icon-cross {
+.nav__btn.is-open .nav-btn__close {
     display: block;
 }
 
-.menu-button .is-open .icon-menu {
+.nav__btn.is-open .nav-btn__menu {
     display: none;
 }

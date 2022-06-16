@@ -20,5 +20,12 @@ img {
 }
 
 .link {
+    transition: color var(--transition-duration) var(--transition-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
     text-decoration: none;
 }

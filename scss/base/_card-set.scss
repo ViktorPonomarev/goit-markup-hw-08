@@ -4,6 +4,12 @@
 
 }
 
+.header-container {
+    @include mq(mobile-only) {
+        display: none;
+    }
+}
+
 .header-nav {
     display: flex;
     align-items: center;
