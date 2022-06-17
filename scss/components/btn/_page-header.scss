@@ -1,6 +1,10 @@
 .page-header {
     border-bottom: 1px solid #ececec;
     position: relative;
+
+    @include mq(tablet) {
+        display: none;
+    }
 }
 
 .page-header .header-navigation {
@@ -8,12 +12,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 80px;
+    min-height: 60px;
 
 }
 
 
-
+// Кнопки на хедер мобильное меню
 .menu-btn {
     display: inline-flex;
     margin: 0;
@@ -50,4 +54,14 @@
         display: block;
     }
 
+}
+
+.icon-cross,
+.icon-menu {
+    color: var(title-text-color);
+}
+
+.icon-cross:hover,
+.icon-menu:focus {
+    color: var(--accent-color);
 }

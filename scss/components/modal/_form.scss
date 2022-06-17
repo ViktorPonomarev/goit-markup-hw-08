@@ -11,6 +11,11 @@
 
 .modal-form {
     text-align: center;
+    max-width: 100%;
+
+    @include mq(desktop) {
+        width: 448px;
+    }
 }
 
 .contact-form {

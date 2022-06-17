@@ -3,7 +3,7 @@
     max-width: 1600px;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) url(../images/Img-8.jpg);
-    // background-color: var(--secondary-bacground-color);
+    background-color: var(--secondary-bacground-color);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    // color: var(--secondary-text-color);
+    color: var(--secondary-text-color);
 
     @include mq(desktop) {
         font-size: 40px;
