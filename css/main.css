@@ -369,6 +369,14 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.menu-btn :hover,
+.menu-btn :focus {
+  color: var(--accent-color);
 }
 
 .menu-btn .icon-cross {
@@ -392,20 +400,15 @@ img {
   font-size: 20px;
   padding: 20px;
   text-align: center;
+  background-color: #fff;
 }
 
 .mobile-menu.is-open {
   display: block;
 }
 
-.icon-cross,
-.icon-menu {
-  color: var(title-text-color);
-}
-
-.icon-cross:hover,
-.icon-menu:focus {
-  color: var(--accent-color);
+.mobile-menu__contatcts {
+  margin-top: auto;
 }
 
 .modal-btn {

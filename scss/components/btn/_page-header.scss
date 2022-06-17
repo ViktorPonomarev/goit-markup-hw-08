@@ -22,9 +22,16 @@
     display: inline-flex;
     margin: 0;
     padding: 0;
-
     border: none;
     background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+
+    & :hover,
+    & :focus {
+        color: var(--accent-color);
+    }
 
 }
 
@@ -50,18 +57,29 @@
     padding: 20px;
     text-align: center;
 
+    // position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     padding: 40px;
+
+    //     display: flex;
+    //     flex-direction: column;
+
+    //     transform: translateX(100%);
+
+    background-color: #fff;
+
     &.is-open {
         display: block;
     }
 
 }
 
-.icon-cross,
-.icon-menu {
-    color: var(title-text-color);
-}
 
-.icon-cross:hover,
-.icon-menu:focus {
-    color: var(--accent-color);
+
+
+.mobile-menu__contatcts {
+    margin-top: auto;
 }
