@@ -28,11 +28,11 @@
     display: none;
 }
 
-.menu-btn .is-open .icon-cross {
+.menu-btn.is-open .icon-cross {
     display: block;
 }
 
-.menu-btn .is-open .icon-menu {
+.menu-btn.is-open .icon-menu {
     display: none;
 }
 
@@ -46,7 +46,7 @@
     padding: 20px;
     text-align: center;
 
-    &is-open {
+    &.is-open {
         display: block;
     }
 
