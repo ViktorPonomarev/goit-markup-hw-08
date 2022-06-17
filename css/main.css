@@ -342,6 +342,12 @@ img {
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .page-header {
+    display: none;
+  }
+}
+
 .page-header .header-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,7 +358,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 80px;
+  min-height: 60px;
 }
 
 .menu-btn {
@@ -394,7 +400,7 @@ img {
 
 .icon-cross,
 .icon-menu {
-  color: var();
+  color: var(title-text-color);
 }
 
 .icon-cross:hover,
