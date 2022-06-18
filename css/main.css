@@ -398,6 +398,16 @@ a {
   line-height: 1.175;
   letter-spacing: 0.02em;
   overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   display: none;
   background-color: #ffffff;
   padding: 48px 40px;
@@ -409,6 +419,10 @@ a {
 }
 .nav-menu.is-open {
   display: block;
+}
+
+.nav-menu__list {
+  margin: 0;
 }
 
 .nav-menu__item + .nav-menu__item {
@@ -424,8 +438,11 @@ a {
   color: var(--title-text-color);
 }
 
-.nav-menu-authorization__list {
+.menu-social-nav {
   margin-top: auto;
+}
+
+.nav-menu-authorization__list {
   color: var(--title-text-color);
   margin-bottom: 64px;
 }
