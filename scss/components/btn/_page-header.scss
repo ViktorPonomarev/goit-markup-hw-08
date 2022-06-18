@@ -68,6 +68,7 @@
     letter-spacing: 0.02em;
     overflow-y: scroll;
 
+
     display: none;
 
     background-color: #ffffff;
@@ -83,6 +84,12 @@
 
     &.is-open {
         display: block;
+    }
+}
+
+.nav-menu__item {
+    &+& {
+        margin-top: 30px;
     }
 }
 

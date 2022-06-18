@@ -95,6 +95,10 @@ img {
   color: var(--accent-color);
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Container */
 .container, .footer-social {
   padding-left: 15px;
@@ -405,6 +409,10 @@ img {
 }
 .nav-menu.is-open {
   display: block;
+}
+
+.nav-menu__item + .nav-menu__item {
+  margin-top: 30px;
 }
 
 .nav-menu__link.nav-menu__link--active {
