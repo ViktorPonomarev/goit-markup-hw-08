@@ -82,7 +82,7 @@
               data-menu-button
               aria-expanded="true"
               aria-controls="mobile-menu">
-          <svg class="" 
+          <svg class="nav-btn__svg" 
             width="40" 
             height="40"
             aria-label="переключтаель мобильного">
@@ -91,44 +91,88 @@
               </svg>
           </button>
             <!-- Мобильное меню -->
+            <!-- site-nav-menu -->
 
-      <div class="mobile-menu" id="mobile-menu" data-menu>
-      <ul class="mobile-menu__nav">
-       <li class="navigation-item">
-                <a href="./index.html" class="nav link current">Студия</a>
+      <div class="nav-menu" id="nav-menu" data-menu>
+       <ul class="nav-menu__list">
+              <li class="nav-menu__item">
+                <a class="nav-menu__link nav-menu__link--active" href="./index.html">Студия</a>
               </li>
-              <li class="navigation-item">
-                <a href="./portfolio.html" class="nav link">Портфолио</a>
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="./portfolio.htm">Портфолио</a>
               </li>
-              <li class="navigation-item"><a href="./index.html" class="nav link">Контакты</a>
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="#footer">Контакты</a>
               </li>
+            </ul>
       </ul>
-      <ul class="mobile-menu__contatcts">
-      <li class="item-desktop">
-              <a href="mailto:info@devstudio.com" class="header-link link">info@devstudio.com</a>
+
+      <!-- auth-nav-menu -->
+      <ul class="nav-menu-authorization__list">
+            <li class="nav-menu-authorization__item">
+              <a class="nav-menu-authorization__link" href="tel:+380961111111">
+                <span class="nav-menu-authorizationTel">+38 096 111 11 11</span>
+                </a
+              >
             </li>
-            <li class="item-tel">
-              <a href="tel:+380961111111" class="header-link link">+38 096 111 11 11</a>
+            <li class="nav-menu-authorization__item">
+              <a class="nav-menu-authorization__link" href="mailto:info@destudio.com">
+                <span class="nav-menu-authorizationMail">info@destudio.com</span>
+              </a>
             </li>
-      </ul>
-      <ul class="mobile-menu__socials">
-        <li class="mobile-menu__item">
-          <a href="" class="mobile-menu__link">Instagram </a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="" class="mobile-menu__link">Twitter</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="" class="mobile-menu__link">Facebook</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="" class="mobile-menu__link">LinkedIn</a>
-        </li>
-      </ul>
+          </ul>
+
+          <!-- Socials-nav-menu -->
+       <ul class="nav-menu-social">
+            <li class="nav-menu-social__item">
+              <a
+                class="nav-menu-social__link"
+                target="_blank"
+                aria-label="instagram"
+                href="https://www.instagram.com"
+              >
+              <span class="nav-menu-social__icon">Instagram</span>
+              
+              </a>
+            </li>
+            <li class="nav-menu-social__item">
+              <a
+                class="nav-menu-social__link"
+                aria-label="tweeter"
+                target="_blank"
+                rel="no-referrer nofollow"
+                href="https://twitter.com">
+              <span class="nav-menu-social__icon"> Tweeter</span>
+              </a>
+            </li>
+            <li class="nav-menu-social__item">
+              <a
+                class="nav-menu-social__link"
+                aria-label="facebook"
+                target="_blank"
+                rel="no-referrer nofollow"
+                href="https://www.facebook.com/"
+              >
+               <span class="nav-menu-social__icon">Facebook</span>
+              
+              </a>
+            </li>
+            <li class="nav-menu-social__item">
+              <a
+                class="nav-menu-social__link"
+                aria-label="linkid"
+                target="_blank"
+                rel="no-referrer nofollow"
+                href="https://www.linkedin.com/">
+               <span class="nav-menu-social__icon">Linkid</span>
+              
+              </a>
+            </li>
+          </ul>
+        </div>  
+      </nav>
     </div>
-            </nav>
-        </div>
-      </div>
+  </div>
 
 </header>
    
