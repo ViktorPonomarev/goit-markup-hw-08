@@ -74,7 +74,7 @@
     justify-content: space-between;
 
 
-    display: none;
+    // display: none;
 
     background-color: #ffffff;
     padding: 48px 40px;
@@ -91,15 +91,15 @@
     //     display: block;
     // }
 
-    visibility: hidden;
+
     transform: translateX(-100%);
     transition: transform var(--transition-duration) var(--transition-function),
-    opacity var(--transition-duration) var(--transition-function);
+    // opacity var(--transition-duration) var(--transition-function);
 }
 
 .nav-menu.is-open {
     display: block;
-    visibility: visible;
+
     transform: translateX(0);
 }
 

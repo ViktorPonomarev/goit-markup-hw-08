@@ -409,17 +409,15 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  display: none;
   background-color: #ffffff;
   padding: 48px 40px;
   z-index: 1;
-  visibility: hidden;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  -webkit-transition: opacity var(--transition-duration) var(--transition-function), -webkit-transform var(--transition-duration) var(--transition-function);
-  transition: opacity var(--transition-duration) var(--transition-function), -webkit-transform var(--transition-duration) var(--transition-function);
-  transition: transform var(--transition-duration) var(--transition-function), opacity var(--transition-duration) var(--transition-function);
-  transition: transform var(--transition-duration) var(--transition-function), opacity var(--transition-duration) var(--transition-function), -webkit-transform var(--transition-duration) var(--transition-function);
+  -webkit-transition: -webkit-transform var(--transition-duration) var(--transition-function);
+  transition: -webkit-transform var(--transition-duration) var(--transition-function);
+  transition: transform var(--transition-duration) var(--transition-function);
+  transition: transform var(--transition-duration) var(--transition-function), -webkit-transform var(--transition-duration) var(--transition-function);
 }
 .nav-menu ul {
   list-style: none;
@@ -428,7 +426,6 @@ a {
 
 .nav-menu.is-open {
   display: block;
-  visibility: visible;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
@@ -1219,17 +1216,52 @@ a {
 /*Герой */
 .hero-section {
   max-width: 1600px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))) url(../images/hero/hero-1600@1x.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) url(../images/hero/hero-1600@1x.jpg);
-  background-color: var(--secondary-bacground-color);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-480@1x.jpg);
+  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-480@1x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 480px) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-480@1x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-480@1x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-480@2x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-480@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-768@1x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-768@1x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-768@2x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-768@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-1600@1x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-1600@1x.jpg);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-1600@2x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-1600@2x.jpg);
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-section {
