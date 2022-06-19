@@ -11,10 +11,11 @@
 }
 
 .page-header .header-navigation {
-
-    display: flex;
-    align-items: center;
     justify-content: space-between;
+    display: flex;
+
+    align-items: center;
+
     // min-height: 80px;
 
 }
@@ -86,9 +87,20 @@
         padding: 0;
     }
 
-    &.is-open {
-        display: block;
-    }
+    // &.is-open {
+    //     display: block;
+    // }
+
+    opacity: 0.8;
+    transform: translateX(-100%);
+    transition: transform var(--transition-duration) var(--transition-function),
+    opacity var(--transition-duration) var(--transition-function);
+}
+
+.nav-menu.is-open {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .nav-menu__list {
