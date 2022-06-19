@@ -55,10 +55,7 @@
     border: 1px solid #EEEEEE;
     border-top: none;
 
-    @include mq(tablet) {
-        // display: flex;
-        flex-grow: 1;
-    }
+
 
 }
 
