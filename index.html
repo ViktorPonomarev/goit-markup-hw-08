@@ -345,14 +345,40 @@
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team list">
+            <!-- Игорёк -->
             <li class="img-item">
-              <img
-                src="./images/img-4.jpg"
-                alt="первый сотрудник компании"
-                width="270"
-                height="260"
-              />
-              <div class="items-team">
+            
+               <picture>
+                <source media="(max-width: 767.99px)"
+                  srcset="
+                  ./images\team\mob@1x.jpg 1x,
+                  ./images\team\mob@2x.jpg 2x,
+                  "
+                  type="image/jpg" />
+
+                <source media="(min-width: 768px)"
+                srcset="
+                ./images\team\tab@1x.jpg 1x,
+                  ./images\team\tab@2x.jpg 2x,
+                "
+                type="image/jpg" />
+
+                <source   
+                media="(min-width: 1200px)"
+                srcset="
+                ./images\team\tab@1x.jpg 1x,
+                  ./images\team\tab@2x.jpg 2x,
+                "
+                type="image/jpg" />
+                <img 
+                src="./images\team\mob@1x.jpg"
+                  alt="Игорь Демьяненко"
+                  sizes="(min-widht:1200px) 25vw, (min-widht:767px) 50vw, (min-widht:479px) 100vw, 100vw
+                  loading="lazy"
+                />
+               </picture>
+              
+               <div class="items-team">
                 <h3 class="team-item">Игорь Демьяненко</h3>
                 <p lang="en" class="team-text">Product Designer</p>
                 <ul class="team-items list">
@@ -407,14 +433,38 @@
                 </ul>
               </div>
             </li>
-
+<!-- Олинька -->
             <li class="img-item">
-              <img
-                src="./images/img-5.jpg"
-                alt="второй сотрудник компании"
-                width="270"
-                height="260"
-              />
+             
+               <picture>
+                <source media="(max-width: 767.99px)"
+                  srcset="
+                  ./images\team\mob@1x-1.jpg 1x,
+                  ./images\team\mob@2x-1.jpg 2x,
+                  "
+                  type="image/jpg" />
+
+                <source media="(min-width: 768px)"
+                srcset="
+                ./images\team\tab@1x-1.jpg 1x,
+                  ./images\team\tab@2x-1.jpg 2x,
+                "
+                type="image/jpg" />
+
+                <source   
+                media="(min-width: 1200px)"
+                srcset="
+                ./images\team\tab@1x-1.jpg 1x,
+                  ./images\team\tab@2x-1.jpg 2x,
+                "
+                type="image/jpg" />
+                <img 
+                src="./images\team\mob@1x-1.jpg"
+                  alt="Ольга Репина"
+                  sizes="(min-widht:1200px) 25vw, (min-widht:767px) 50vw, (min-widht:479px) 100vw, 100vw
+                  loading="lazy"
+                />
+               </picture>
               <div class="items-team">
                 <h3 class="team-item">Ольга Репина</h3>
                 <p lang="en" class="team-text">Frontend Developer</p>
@@ -470,13 +520,37 @@
                 </ul>
               </div>
             </li>
+            <!-- Тарасик -->
             <li class="img-item">
-              <img
-                src="./images/img-6.jpg"
-                alt=" третий сотрудник компании"
-                width="270"
-                height="260"
-              />
+             <picture>
+                <source media="(max-width: 767.99px)"
+                  srcset="
+                  ./images\team\mob@1x-2.jpg 1x,
+                  ./images\team\mob@2x-2.jpg 2x,
+                  "
+                  type="image/jpg" />
+
+                <source media="(min-width: 768px)"
+                srcset="
+                ./images\team\tab@1x-2.jpg 1x,
+                  ./images\team\tab@2x-2.jpg 2x,
+                "
+                type="image/jpg" />
+
+                <source   
+                media="(min-width: 1200px)"
+                srcset="
+                ./images\team\tab@1x-2.jpg 1x,
+                  ./images\team\tab@2x-2.jpg 2x,
+                "
+                type="image/jpg" />
+                <img 
+                src="./images\team\mob@1x-2.jpg.jpg"
+                  alt="Николай Тарасов"
+                  sizes="(min-widht:1200px) 25vw, (min-widht:767px) 50vw, (min-widht:479px) 100vw, 100vw
+                  loading="lazy"
+                />
+               </picture>
               <div class="items-team">
                 <h3 class="team-item">Николай Тарасов</h3>
                 <p lang="en" class="team-text">Marketing</p>
@@ -493,6 +567,7 @@
                         <use href="./images/sprite.svg#icon-instagram-1"></use></svg></a>
                     
                   </li>
+                  
                   <li class="items-icon">
                     <a
                       class="team-link link"
@@ -532,13 +607,37 @@
                 </ul>
               </div>
             </li>
+            <!-- Мишка -->
             <li class="img-item">
-              <img
-                src="./images/img-7.jpg"
-                alt="четвёртый сотрудник компании"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(max-width: 767.99px)"
+                  srcset="
+                  ./images\team\mob@1x-3.jpg 1x,
+                  ./images\team\mob@2x-3.jpg 2x,
+                  "
+                  type="image/jpg" />
+
+                <source media="(min-width: 768px)"
+                srcset="
+                ./images\team\tab@1x-3.jpg 1x,
+                  ./images\team\tab@2x-3.jpg 2x,
+                "
+                type="image/jpg" />
+
+                <source   
+                media="(min-width: 1200px)"
+                srcset="
+                ./images\team\tab@1x-3.jpg 1x,
+                  ./images\team\tab@2x-3.jpg 2x,
+                "
+                type="image/jpg" />
+                <img 
+                src="./images\team\mob@1x-3.jpg.jpg"
+                  alt="Михаил Ермаков"
+                  sizes="(min-widht:1200px) 25vw, (min-widht:767px) 50vw, (min-widht:479px) 100vw, 100vw
+                  loading="lazy"
+                />
+               </picture>
               <div class="items-team">
                 <h3 class="team-item">Михаил Ермаков</h3>
                 <p lang="en" class="team-text">Product Designer</p>
