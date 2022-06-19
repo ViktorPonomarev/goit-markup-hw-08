@@ -78,6 +78,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -438,11 +439,8 @@ a {
   color: var(--title-text-color);
 }
 
-.menu-social-nav {
-  margin-top: auto;
-}
-
 .nav-menu-authorization__list {
+  margin-top: auto;
   color: var(--title-text-color);
   margin-bottom: 64px;
 }
@@ -1210,8 +1208,8 @@ a {
 /*Герой */
 .hero-section {
   max-width: 1600px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))) url(../images/Img-8.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) url(../images/Img-8.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))) url(../images/hero/hero-1600@1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) url(../images/hero/hero-1600@1x.jpg);
   background-color: var(--secondary-bacground-color);
   background-size: cover;
   background-position: center;

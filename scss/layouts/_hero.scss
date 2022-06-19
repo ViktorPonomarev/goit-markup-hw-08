@@ -2,7 +2,8 @@
 .hero-section {
     max-width: 1600px;
 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) url(../images/Img-8.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)) url(../images/hero/hero-1600@1x.jpg);
     background-color: var(--secondary-bacground-color);
     background-size: cover;
     background-position: center;

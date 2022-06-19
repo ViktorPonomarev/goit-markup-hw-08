@@ -4,6 +4,7 @@
     border-bottom: 1px solid #ececec;
     position: relative;
 
+
     @include mq(tablet) {
         display: none;
     }
@@ -113,12 +114,10 @@
 // < !-- auth-nav-menu -->
 
 
-.menu-social-nav {
-    margin-top: auto;
-}
+
 
 .nav-menu-authorization__list {
-    // margin-top: auto;
+    margin-top: auto;
     color: var(--title-text-color);
     margin-bottom: 64px;
 }
