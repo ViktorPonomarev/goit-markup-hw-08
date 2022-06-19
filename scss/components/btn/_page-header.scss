@@ -59,6 +59,7 @@
 
 // site-nav-menu
 .nav-menu {
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -69,7 +70,6 @@
     line-height: 1.175;
     letter-spacing: 0.02em;
     overflow-y: scroll;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
 
@@ -91,7 +91,7 @@
     //     display: block;
     // }
 
-    opacity: 0.8;
+    visibility: hidden;
     transform: translateX(-100%);
     transition: transform var(--transition-duration) var(--transition-function),
     opacity var(--transition-duration) var(--transition-function);
@@ -99,7 +99,7 @@
 
 .nav-menu.is-open {
     display: block;
-    opacity: 1;
+    visibility: visible;
     transform: translateX(0);
 }
 
