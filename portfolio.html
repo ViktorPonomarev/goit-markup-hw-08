@@ -204,34 +204,39 @@
             <li class="features-item">
               <a class="icon link" href="#">
                 <div class="features-overlay">
-                <picture>
-                <source media="(max-width: 767.99px)"
-                    srcset="
-                  ./images\portfolio\imgm-p@1x.jpg 1x,
-                  ./images\portfolio\imgm-p@2x.jpg 2x,
-                  "
-                  type="image/jpg" />
+               <picture>
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/projects/project-1_lg.webp    1x,
+                                        ./images/projects/project-1_lg@2x.webp 2x
+                                      " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/projects/project-1_lg.jpg    1x,
+                                        ./images/projects/project-1_lg@2x.jpg 2x
+                                      " type="image/jpg">
 
-                <source media="(min-width: 768px)"
-                srcset="
-                ./images\portfolio\imgt-p@1x.jpg 1x,
-                  ./images\portfolio\imgt-p@2x.jpg.jpg 2x,
-                "
-                type="image/jpg" />
-
-                <source   
-                media="(min-width: 1200px)"
-                srcset="
-                ./images\portfolio\imgb-p@1x.jpg 1x,
-                  ./images\portfolio\imgb-p@2x.jpg 2x,
-                "
-                type="image/jpg" />
-                <img 
-                src="./images\portfolio\imgm-p@1x.jpg"
-                  alt="Ноутбук"
-                  sizes="(min-widht:1200px) 25vw, (min-widht:767px) 50vw, (min-widht:479px) 100vw, 100vw
-                  loading="lazy" />
-               </picture>
+                                    <!-- for tablet -->
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/projects/project-1_md.webp    1x,
+                                        ./images/projects/project-1_md@2x.webp 2x
+                                      " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/projects/project-1_md.jpg    1x,
+                                        ./images/projects/project-1_md@2x.jpg 2x
+                                      " type="image/jpg">
+                                    <!-- for mobile -->
+                                    <source media="(max-width: 767px)" srcset="
+                                        ./images/projects/project-1_sm.webp    1x,
+                                        ./images/projects/project-1_sm@2x.webp 2x
+                                      " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                        ./images/projects/project-1_sm.jpg    1x,
+                                        ./images/projects/project-1_sm@2x.jpg 2x
+                                      " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-1_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
                  <p class="features-overlay-text">Ресурс предлагает комплексные 
                    предложения с разным уровнем функционала 
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
@@ -247,35 +252,39 @@
               <li class="features-item">
               <a class="icon link" href="#">
                 <div class="features-overlay">
-              <picture>
-                <source media="(max-width: 767.99px)"
-                    srcset="
-                  ./images\portfolio\imgm-p@1x-1.jpg 1x,
-                  ./images\portfolio\imgm-p@2x-1.jpg 2x,
-                  "
-                  type="image/jpg" />
+                <picture>
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                        ./images/projects/project-2_lg.webp    1x,
+                                                        ./images/projects/project-2_lg@2x.webp 2x
+                                                      " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                                        ./images/projects/project-2_lg.jpg    1x,
+                                                        ./images/projects/project-2_lg@2x.jpg 2x
+                                                      " type="image/jpg">
 
-                <source media="(min-width: 768px)"
-                srcset="
-                ./images\portfolio\imgt-p@1x-1.jpg 1x,
-                  ./images\portfolio\imgt-p@2x-1.jpg.jpg 2x,
-                "
-                type="image/jpg" />
-
-                <source   
-                media="(min-width: 1200px)"
-                srcset="
-                ./images\portfolio\imgb-p@1x-1.jpg 1x,
-                  ./images\portfolio\imgb-p@2x-1.jpg 2x,
-                "
-                type="image/jpg" />
-                <img -1
-                src="./images\portfolio\imgm-p@1x-1.jpg"
-                  alt="Баскетбол"
-                  sizes="(min-widht:1200px) 25vw, (min-widht:767px) 50vw, (min-widht:479px) 100vw, 100vw
-                  loading="lazy"
-                />
-               </picture>
+                                    <!-- for tablet-->
+                                    <source media="(min-width: 768px)" srcset="
+                                                        ./images/projects/project-2_md.webp    1x,
+                                                        ./images/projects/project-2_md@2x.webp 2x
+                                                      " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                                        ./images/projects/project-2_md.jpg    1x,
+                                                        ./images/projects/project-2_md@2x.jpg 2x
+                                                      " type="image/jpg">
+                                    <!-- for mobile-->
+                                    <source media="(max-width: 767px)" srcset="
+                                                        ./images/projects/project-2_sm.webp    1x,
+                                                        ./images/projects/project-2_sm@2x.webp 2x
+                                                      " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                                        ./images/projects/project-2_sm.jpg    1x,
+                                                        ./images/projects/project-2_sm@2x.jpg 2x
+                                                      " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-2_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
                <p class="features-overlay-text">Ресурс предлагает комплексные 
                    предложения с разным уровнем функционала 
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
@@ -292,34 +301,38 @@
               <a class="icon link" href="#">
                 <div class="features-overlay">
               <picture>
-                <source media="(max-width: 767.99px)"
-                    srcset="
-                  ./images\portfolio\imgm-p@1x-2.jpg 1x,
-                  ./images\portfolio\imgm-p@2x-2.jpg 2x,
-                  "
-                  type="image/jpg" />
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-3_lg.webp    1x,
+                                                            ./images/projects/project-3_lg@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-3_lg.jpg    1x,
+                                                            ./images/projects/project-3_lg@2x.jpg 2x
+                                                          " type="image/jpg">
 
-                <source media="(min-width: 768px)"
-                srcset="
-                ./images\portfolio\imgt-p@1x-2.jpg 1x,
-                  ./images\portfolio\imgt-p@2x-2.jpg.jpg 2x,
-                "
-                type="image/jpg" />
-
-                <source   
-                media="(min-width: 1200px)"
-                srcset="
-                ./images\portfolio\imgb-p@1x-2.jpg 1x,
-                  ./images\portfolio\imgb-p@2x-2.jpg 2x,
-                "
-                type="image/jpg" />
-                <img 
-                src="./images\portfolio\imgm-p@1x-2.jpg"
-                  alt="Рыба"
-                  sizes="(min-widht:1200px) 25vw, (min-widht:767px) 50vw, (min-widht:479px) 100vw, 100vw
-                  loading="lazy"
-                />
-               </picture>
+                                    <!-- for tablet -->
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-3_md.webp    1x,
+                                                            ./images/projects/project-3_md@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-3_md.jpg    1x,
+                                                            ./images/projects/project-3_md@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- for mobile -->
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-3_sm.webp    1x,
+                                                            ./images/projects/project-3_sm@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-3_sm.jpg    1x,
+                                                            ./images/projects/project-3_sm@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-3_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
               <p class="features-overlay-text">Ресурс предлагает комплексные 
                    предложения с разным уровнем функционала 
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
@@ -334,35 +347,39 @@
             <li class="features-item">
               <a class="icon link" href="#">
                 <div class="features-overlay">
-              <picture>
-               <source media="(max-width: 767.99px)"
-                    srcset="
-                  ./images\portfolio\imgm-p@1x-3.jpg 1x,
-                  ./images\portfolio\imgm-p@2x-3.jpg 2x,
-                  "
-                  type="image/jpg" />
+               <picture>
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-4_lg.webp    1x,
+                                                            ./images/projects/project-4_lg@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-4_lg.jpg    1x,
+                                                            ./images/projects/project-4_lg@2x.jpg 2x
+                                                          " type="image/jpg">
 
-                <source media="(min-width: 768px)"
-                srcset="
-                ./images\portfolio\imgt-p@1x-3.jpg 1x,
-                  ./images\portfolio\imgt-p@2x-3.jpg.jpg 2x,
-                "
-                type="image/jpg" />
-
-                <source   
-                media="(min-width: 1200px)"
-                srcset="
-                ./images\portfolio\imgb-p@1x-3.jpg 1x,
-                  ./images\portfolio\imgb-p@2x-3.jpg 2x,
-                "
-                type="image/jpg" />
-                <img 
-                src="./images\portfolio\imgm-p@1x-3.jpg"
-                  alt="Наушники"
-                  sizes="(min-widht:1200px) 25vw, (min-widht:767px) 50vw, (min-widht:479px) 100vw, 100vw
-                  loading="lazy"
-                />
-               </picture>
+                                    <!-- for tablet -->
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-4_md.webp    1x,
+                                                            ./images/projects/project-4_md@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-4_md.jpg    1x,
+                                                            ./images/projects/project-4_md@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- for mobile-->
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-4_sm.webp    1x,
+                                                            ./images/projects/project-4_sm@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-4_sm.jpg    1x,
+                                                            ./images/projects/project-4_sm@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-4_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
               <p class="features-overlay-text">Ресурс предлагает комплексные 
                    предложения с разным уровнем функционала 
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
@@ -378,33 +395,38 @@
                <a class="icon link" href="#">
                 <div class="features-overlay">
               <picture>
-               <source media="(max-width: 767.99px)"
-                    srcset="
-                  ./images\portfolio\imgm-p@1x-4.jpg 1x,
-                  ./images\portfolio\imgm-p@2x-4.jpg 2x,
-                  "
-                  type="image/jpg" />
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-5_lg.webp    1x,
+                                                            ./images/projects/project-5_lg@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-5_lg.jpg    1x,
+                                                            ./images/projects/project-5_lg@2x.jpg 2x
+                                                          " type="image/jpg">
 
-                <source media="(min-width: 768px)"
-                srcset="
-                ./images\portfolio\imgt-p@1x-4.jpg 1x,
-                  ./images\portfolio\imgt-p@2x-4.jpg.jpg 2x,
-                "
-                type="image/jpg" />
-
-                <source   
-                media="(min-width: 1200px)"
-                srcset="
-                ./images\portfolio\imgb-p@1x-4.jpg 1x,
-                  ./images\portfolio\imgb-p@2x-4.jpg 2x,
-                "
-                type="image/jpg" />
-                <img src="./images\portfolio\imgm-p@1x-4.jpg"
-                  alt="Боксы"
-                  sizes="(min-widht:1200px) 25vw, (min-widht:767px) 50vw, (min-widht:479px) 100vw, 100vw
-                  loading="lazy"
-                />
-               </picture>
+                                    <!-- for tablet-->
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-5_md.webp    1x,
+                                                            ./images/projects/project-5_md@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-5_md.jpg    1x,
+                                                            ./images/projects/project-5_md@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- for mobile-->
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-5_sm.webp    1x,
+                                                            ./images/projects/project-5_sm@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-5_sm.jpg    1x,
+                                                            ./images/projects/project-5_sm@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-5_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
               <p class="features-overlay-text">Ресурс предлагает комплексные 
                    предложения с разным уровнем функционала 
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
@@ -419,35 +441,39 @@
             <li class="features-item">
               <a class="icon link" href="#">
                 <div class="features-overlay">
-              <picture>
-             <source media="(max-width: 767.99px)"
-                    srcset="
-                  ./images\portfolio\imgm-p@1x-5.jpg 1x,
-                  ./images\portfolio\imgm-p@2x-5.jpg 2x,
-                  "
-                  type="image/jpg" />
+                 <picture>
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-6_lg.webp    1x,
+                                                            ./images/projects/project-6_lg@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-6_lg.jpg    1x,
+                                                            ./images/projects/project-6_lg@2x.jpg 2x
+                                                          " type="image/jpg">
 
-                <source media="(min-width: 768px)"
-                srcset="
-                ./images\portfolio\imgt-p@1x-5.jpg 1x,
-                  ./images\portfolio\imgt-p@2x-5.jpg.jpg 2x,
-                "
-                type="image/jpg" />
-
-                <source   
-                media="(min-width: 1200px)"
-                srcset="
-                ./images\portfolio\imgb-p@1x-5.jpg 1x,
-                  ./images\portfolio\imgb-p@2x-5.jpg 2x,
-                "
-                type="image/jpg" />
-                <img 
-                src="./images\portfolio\imgm-p@1x-5.jpg"
-                  alt="Монитор ПК"
-                  sizes="(min-widht:1200px) 25vw, (min-widht:767px) 50vw, (min-widht:479px) 100vw, 100vw
-                  loading="lazy"
-                />
-               </picture>
+                                    <!-- for tablet-->
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-6_md.webp    1x,
+                                                            ./images/projects/project-6_md@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-6_md.jpg    1x,
+                                                            ./images/projects/project-6_md@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- for mobile-->
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-6_sm.webp    1x,
+                                                            ./images/projects/project-6_sm@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-6_sm.jpg    1x,
+                                                            ./images/projects/project-6_sm@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-6_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
               <p class="features-overlay-text">Ресурс предлагает комплексные 
                    предложения с разным уровнем функционала 
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
@@ -462,35 +488,39 @@
             <li class="features-item">
               <a class="icon link" href="#">
                 <div class="features-overlay">
-              <picture>
-             <source media="(max-width: 767.99px)"
-                    srcset="
-                  ./images\portfolio\imgm-p@1x-6.jpg 1x,
-                  ./images\portfolio\imgm-p@2x-6.jpg 2x,
-                  "
-                  type="image/jpg" />
+               <picture>
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-7_lg.webp    1x,
+                                                            ./images/projects/project-7_lg@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-7_lg.jpg    1x,
+                                                            ./images/projects/project-7_lg@2x.jpg 2x
+                                                          " type="image/jpg">
 
-                <source media="(min-width: 768px)"
-                srcset="
-                ./images\portfolio\imgt-p@1x-6.jpg 1x,
-                  ./images\portfolio\imgt-p@2x-6.jpg.jpg 2x,
-                "
-                type="image/jpg" />
-
-                <source   
-                media="(min-width: 1200px)"
-                srcset="
-                ./images\portfolio\imgb-p@1x-6.jpg 1x,
-                  ./images\portfolio\imgb-p@2x-6.jpg 2x,
-                "
-                type="image/jpg" />
-                <img 
-                src="./images\portfolio\imgm-p@1x-6.jpg"
-                  alt="Журнал"
-                  sizes="(min-widht:1200px) 25vw, (min-widht:767px) 50vw, (min-widht:479px) 100vw, 100vw
-                  loading="lazy"
-                />
-               </picture>
+                                    <!-- for tablet-->
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-7_md.webp    1x,
+                                                            ./images/projects/project-7_md@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-7_md.jpg    1x,
+                                                            ./images/projects/project-7_md@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- for mobile -->
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-7_sm.webp    1x,
+                                                            ./images/projects/project-7_sm@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-7_sm.jpg    1x,
+                                                            ./images/projects/project-7_sm@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-7_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
               <p class="features-overlay-text">Ресурс предлагает комплексные 
                    предложения с разным уровнем функционала 
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
@@ -507,35 +537,39 @@
             <li class="features-item">
               <a class="icon link" href="#">
                 <div class="features-overlay">
-              <picture>
-             <source media="(max-width: 767.99px)"
-                    srcset="
-                  ./images\portfolio\imgm-p@1x-7.jpg 1x,
-                  ./images\portfolio\imgm-p@2x-7.jpg 2x,
-                  "
-                  type="image/jpg" />
+           <picture>
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-8_lg.webp    1x,
+                                                            ./images/projects/project-8_lg@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-8_lg.jpg    1x,
+                                                            ./images/projects/project-8_lg@2x.jpg 2x
+                                                          " type="image/jpg">
 
-                <source media="(min-width: 768px)"
-                srcset="
-                ./images\portfolio\imgt-p@1x-7.jpg 1x,
-                  ./images\portfolio\imgt-p@2x-7.jpg.jpg 2x,
-                "
-                type="image/jpg" />
-
-                <source   
-                media="(min-width: 1200px)"
-                srcset="
-                ./images\portfolio\imgb-p@1x-7.jpg 1x,
-                  ./images\portfolio\imgb-p@2x-7.jpg 2x,
-                "
-                type="image/jpg" />
-                <img 
-                src="./images\portfolio\imgm-p@1x-7.jpg"
-                  alt="Бирка с одежды"
-                  sizes="(min-widht:1200px) 25vw, (min-widht:767px) 50vw, (min-widht:479px) 100vw, 100vw
-                  loading="lazy"
-                />
-               </picture>
+                                    <!-- for tablet-->
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-8_md.webp    1x,
+                                                            ./images/projects/project-8_md@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-8_md.jpg    1x,
+                                                            ./images/projects/project-8_md@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- for mobile-->
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-8_sm.webp    1x,
+                                                            ./images/projects/project-8_sm@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-8_sm.jpg    1x,
+                                                            ./images/projects/project-8_sm@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-8_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
               <p class="features-overlay-text">Ресурс предлагает комплексные 
                    предложения с разным уровнем функционала 
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
@@ -550,35 +584,39 @@
             <li class="features-item">
               <a class="icon link" href="#">
                 <div class="features-overlay">
-              <picture>
-                <source media="(max-width: 767.99px)"
-                    srcset="
-                  ./images\portfolio\imgm-p@1x-8.jpg 1x,
-                  ./images\portfolio\imgm-p@2x-8.jpg 2x,
-                  "
-                  type="image/jpg" />
+                <picture>
+                                    <!-- for desktop -->
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-9_lg.webp    1x,
+                                                            ./images/projects/project-9_lg@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="
+                                                            ./images/projects/project-9_lg.jpg    1x,
+                                                            ./images/projects/project-9_lg@2x.jpg 2x
+                                                          " type="image/jpg">
 
-                <source media="(min-width: 768px)"
-                srcset="
-                ./images\portfolio\imgt-p@1x-8.jpg 1x,
-                  ./images\portfolio\imgt-p@2x-8.jpg.jpg 2x,
-                "
-                type="image/jpg" />
-
-                <source   
-                media="(min-width: 1200px)"
-                srcset="
-                ./images\portfolio\imgb-p@1x-8.jpg 1x,
-                  ./images\portfolio\imgb-p@2x-8.jpg 2x,
-                "
-                type="image/jpg" />
-                <img 
-                src="./images\portfolio\imgm-p@1x-8.jpg"
-                  alt="Работа за ноутбуком"
-                  sizes="(min-widht:1200px) 25vw, (min-widht:767px) 50vw, (min-widht:479px) 100vw, 100vw
-                  loading="lazy"
-                />
-               </picture>
+                                    <!-- for tablet-->
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-9_md.webp    1x,
+                                                            ./images/projects/project-9_md@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/projects/project-9_md.jpg    1x,
+                                                            ./images/projects/project-9_md@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- for mobile-->
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-9_sm.webp    1x,
+                                                            ./images/projects/project-9_sm@2x.webp 2x
+                                                          " type="image/webp">
+                                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/projects/project-9_sm.jpg    1x,
+                                                            ./images/projects/project-9_sm@2x.jpg 2x
+                                                          " type="image/jpg">
+                                    <!-- default device type-->
+                                    <img class="project__img" src="./images/projects/project-9_sm.jpg"
+                                        alt="Интерфейс сайта" width="450" height="294" loading="lazy">
+                                </picture>
               <p class="features-overlay-text">Ресурс предлагает комплексные 
                    предложения с разным уровнем функционала 
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
