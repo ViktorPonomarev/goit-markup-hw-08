@@ -5,7 +5,14 @@
     justify-content: center;
 
 
-    @include mq(mobile) {
+    @include mq(mobile-only) {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        margin-bottom: 30px;
+    }
+
+    @include mq(tablet-only) {
         font-weight: 400;
         font-size: 12px;
         line-height: 1.16;
